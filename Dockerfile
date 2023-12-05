@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt update
 RUN apt install -y nodejs
