@@ -1,10 +1,11 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+RUN apt update
+RUN apt install -y curl
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt update
 RUN apt install -y nodejs
 
-RUN apt update
 RUN apt install -y vim
 RUN apt install -y net-tools
 RUN apt install -y curl
